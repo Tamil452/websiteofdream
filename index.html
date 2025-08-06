@@ -174,20 +174,29 @@ box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
     </div>
     
     <!-- CTA Buttons -->
-    <div class="flex flex-col sm:flex-row gap-4 mb-8 animate-fadeInUp" style="animation-delay: 0.4s;">
-        <button onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth', block: 'start'})" class="group relative px-8 py-4 gradient-blue text-white rounded-xl text-lg font-semibold overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-[#004bad]/25 font-heading">
+    <div class="flex flex-col sm:flex-row gap-4 mb-8 animate-fadeInUp w-full sm:w-auto" style="animation-delay: 0.4s;">
+        <!-- Explore AI Solutions Button -->
+        <button 
+            onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth', block: 'start'})" 
+            class="group relative w-full sm:w-auto px-6 py-3 gradient-blue text-white rounded-lg text-base sm:text-lg font-semibold overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-[#004bad]/25 font-heading">
             <span class="relative z-10">Explore AI Solutions</span>
             <div class="absolute inset-0 bg-gradient-to-r from-[#004bad] to-[#0056cc] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </button>
-        <button onclick="window.location.href='https://calendly.com/dellizocorporate/30min'" class="px-8 py-4 border-2 border-[#004bad]/50 text-[#004bad] rounded-xl text-lg font-semibold hover:border-[#0056cc] hover:bg-[#004bad]/10 hover:text-[#0056cc] transition-all duration-300 backdrop-blur-sm font-heading">
-            <span class="flex items-center">
+    
+        <!-- Schedule Consultation Button -->
+        <button 
+            onclick="window.location.href='https://calendly.com/dellizocorporate/30min'" 
+            class="w-full sm:w-auto px-6 py-3 border border-[#004bad]/50 text-[#004bad] rounded-lg text-base sm:text-lg font-semibold hover:border-[#0056cc] hover:bg-[#004bad]/10 hover:text-[#0056cc] transition-all duration-300 backdrop-blur-sm font-heading">
+            <span class="flex items-center justify-center">
                 Schedule Consultation
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                 </svg>
             </span>
         </button>
     </div>
+    
     
     <!-- Trust Indicators -->
     <!-- <div class="flex items-center space-x-6 text-sm text-gray-400 animate-fadeInUp" style="animation-delay: 0.5s;">
