@@ -86,6 +86,25 @@ box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
 
 .section-visible { opacity: 1; transform: translateY(0); }
 .section-hidden { opacity: 0; transform: translateY(30px); }
+
+/* Galaxy section styles */
+.galaxy-section {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+}
+
+.cosmic-particles {
+    animation: twinkle 3s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
 </style>
 </head>
 <body class="bg-slate-900 text-white overflow-x-hidden">
@@ -101,6 +120,7 @@ box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
         </div>
     
     <div class="hidden md:flex items-center space-x-8">
+        <a href="#hero" class="hover:text-[#004bad] transition-colors font-medium">Home</a>
         <a href="#about" class="hover:text-[#004bad] transition-colors font-medium">About</a>
         <a href="#journey" class="hover:text-[#004bad] transition-colors font-medium">Our Journey</a>
         <a href="#features" class="hover:text-[#004bad] transition-colors font-medium">Features</a>
@@ -130,6 +150,7 @@ box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
     <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-slate-700">
     <div class="flex flex-col space-y-4 pt-4">
+        <a href="#hero" class="text-white hover:text-[#004bad] transition-colors font-medium">Home</a>
         <a href="#about" class="text-white hover:text-[#004bad] transition-colors font-medium">About</a>
         <a href="#journey" class="text-white hover:text-[#004bad] transition-colors font-medium">Our Journey</a>
         <a href="#features" class="text-white hover:text-[#004bad] transition-colors font-medium">Features</a>
@@ -139,8 +160,66 @@ box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
     </div>
 </nav>
 
+<!-- Galaxy Background Section -->
+<section class="relative h-screen overflow-hidden">
+    <!-- Galaxy Background Image -->
+    <div class="absolute inset-0 z-0">
+        <img src="/image.png" alt="Galaxy Background" class="w-full h-full object-cover opacity-80">
+        <!-- Overlay for better text readability -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900/80"></div>
+    </div>
+
+    <!-- Content overlay -->
+    <div class="relative z-10 h-full flex items-center justify-center">
+        <div class="text-center px-4 sm:px-6">
+            <!-- Cosmic Badge -->
+            <div class="inline-flex items-center px-4 py-2 bg-slate-900/60 backdrop-blur-sm border border-blue-400/30 rounded-full text-blue-300 text-sm font-medium mb-8 animate-fadeInUp">
+                <span class="w-2 h-2 bg-blue-400 rounded-full mr-2 animate-pulse"></span>
+                Exploring the Universe of AI Possibilities
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fadeInUp leading-tight font-display">
+                <span class="text-white">Welcome to the</span><br>
+                <span class="gradient-text">Cosmic Era</span><br>
+                <span class="text-white">of AI Innovation</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed animate-fadeInUp max-w-4xl mx-auto font-light" style="animation-delay: 0.2s;">
+                Just as the cosmos holds infinite possibilities, Dellizo unlocks limitless potential
+                for enterprise transformation through advanced AI solutions.
+            </p>
+
+            <!-- CTA Button -->
+            <div class="animate-fadeInUp" style="animation-delay: 0.4s;">
+                <button
+                    onclick="document.getElementById('hero').scrollIntoView({behavior: 'smooth', block: 'start'})"
+                    class="group relative px-8 py-4 gradient-blue text-white rounded-xl text-lg font-semibold overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/25 font-heading">
+                    <span class="relative z-10 flex items-center">
+                        Discover Our Universe
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating cosmic particles -->
+    <div class="absolute inset-0 pointer-events-none z-5">
+        <div class="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-ping opacity-60"></div>
+        <div class="absolute top-3/4 right-1/4 w-1 h-1 bg-purple-400 rounded-full animate-pulse opacity-60"></div>
+        <div class="absolute top-1/2 right-1/6 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-ping opacity-60" style="animation-delay: -0.5s;"></div>
+        <div class="absolute bottom-1/3 left-1/6 w-1 h-1 bg-blue-300 rounded-full animate-pulse opacity-60" style="animation-delay: -1s;"></div>
+        <div class="absolute top-1/6 left-1/2 w-1.5 h-1.5 bg-purple-300 rounded-full animate-ping opacity-60" style="animation-delay: -1.5s;"></div>
+    </div>
+</section>
+
 <!-- Hero Section -->
-<section class="min-h-screen flex items-center justify-center relative pt-16 sm:pt-20 overflow-hidden px-4 sm:px-0">
+<section id="hero" class="min-h-screen flex items-center justify-center relative pt-16 sm:pt-20 overflow-hidden px-4 sm:px-0">
     <!-- Dynamic Grid Background -->
 <div class="absolute inset-0 opacity-20">
 <div class="absolute inset-0" style="background-image: linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px); background-size: 50px 50px;"></div>
