@@ -93,6 +93,19 @@
         }
       }
 
+      @keyframes carousel {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-10%);
+        }
+      }
+
+      .animate-carousel {
+        animation: carousel 5s linear infinite;
+      }
+
       .animate-fadeInUp {
         animation: fadeInUp 0.8s ease-out forwards;
       }
@@ -187,7 +200,7 @@
               class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#004bad] to-[#0056cc] rounded-lg flex items-center justify-center p-1"
             >
               <img
-                src="/dellizo_white_logo-removebg-preview.png"
+                src="/websiteofdream-main/dellizo_white_logo-removebg-preview.png"
                 alt="Dellizo Logo"
                 class="w-full h-full object-contain"
               />
@@ -303,7 +316,7 @@
       <!-- Galaxy Background Image -->
       <div class="absolute inset-0 z-0">
         <img
-          src="/image.png"
+          src="/image copy.png"
           alt="Galaxy Background"
           class="w-full h-full object-cover opacity-80"
         />
@@ -501,15 +514,15 @@
               style="animation-delay: 0.3s"
             >
               <span
-                class="px-3 py-1 sm:px-4 sm:py-2 bg-[#004bad]/20 border border-[#004bad]/30 rounded-full gradient-text text-xs sm:text-sm"
+                class="px-3 py-1 sm:px-4 sm:py-2 bg-[#004bad]/20 border border-[#004bad]/30 rounded-full text-[#0056cc] text-xs sm:text-sm"
                 >🚀 Next-Gen Technology</span
               >
               <span
-                class="px-3 py-1 sm:px-4 sm:py-2 bg-[#004bad]/20 border border-[#004bad]/30 rounded-full gradient-text text-xs sm:text-sm"
+                class="px-3 py-1 sm:px-4 sm:py-2 bg-[#004bad]/20 border border-[#004bad]/30 rounded-full text-[#0056cc] text-xs sm:text-sm"
                 >🏢 Enterprise Scale</span
               >
               <span
-                class="px-3 py-1 sm:px-4 sm:py-2 bg-[#004bad]/20 border border-[#004bad]/30 rounded-full gradient-text text-xs sm:text-sm hidden sm:inline"
+                class="px-3 py-1 sm:px-4 sm:py-2 bg-[#004bad]/20 border border-[#004bad]/30 rounded-full text-[#0056cc] text-xs sm:text-sm hidden sm:inline"
                 >📈 Market Leadership</span
               >
             </div>
@@ -1022,7 +1035,7 @@
               <div class="w-64 h-64 sm:w-80 sm:h-80 relative">
                 <!-- Main Circle -->
                 <div
-                  class="absolute inset-6 sm:inset-8 bg-gradient-to-br from-[#6366f1] via-[#8b5cf6] to-[#a855f7] opacity-80 rounded-full animate-glow flex items-center justify-center shadow-2xl"
+                  class="absolute inset-6 sm:inset-8 bg-gradient-to-br from-[#004bad] to-[#0056cc] rounded-full animate-glow flex items-center justify-center shadow-2xl"
                 >
                   <div
                     class="w-32 h-32 sm:w-40 sm:h-40 bg-slate-900 rounded-full flex items-center justify-center border-4 border-[#004bad]/30"
@@ -1042,193 +1055,165 @@
 
                 <!-- Orbiting Icons -->
                 <!-- Innovation Icon (Top) -->
-                <div class="relative w-[300px] h-[300px] mx-auto">
-
-                  <!-- Top Icon -->
-                  <div
-                    class="absolute -top-4 left-1/2 -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center animate-float shadow-lg"
+                <div
+                  class="absolute -top-2 sm:-top-4 left-1/2 transform -translate-x-1/2 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl sm:rounded-2xl flex items-center justify-center animate-float shadow-lg"
+                >
+                  <svg
+                    class="w-6 h-6 sm:w-8 sm:h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      class="w-8 h-8 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M13 10V3L4 14h7v7l9-11h-7z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    ></path>
+                  </svg>
+                </div>
 
-                  <!-- Right Icon -->
-                  <div
-                    class="absolute top-1/2 -right-4 -translate-y-1/2 w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center animate-float shadow-lg"
-                    style="animation-delay: -1s"
+                <!-- Analytics Icon (Right) -->
+                <div
+                  class="absolute top-1/2 -right-2 sm:-right-4 transform -translate-y-1/2 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl sm:rounded-2xl flex items-center justify-center animate-float shadow-lg"
+                  style="animation-delay: -1s"
+                >
+                  <svg
+                    class="w-6 h-6 sm:w-8 sm:h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      class="w-8 h-8 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                    ></path>
+                  </svg>
+                </div>
 
-                  <!-- Bottom Icon -->
-                  <div
-                    class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-[#004bad] to-[#0066ff] rounded-2xl flex items-center justify-center animate-float shadow-lg"
-                    style="animation-delay: -2s"
+                <!-- Automation Icon (Bottom) -->
+                <div
+                  class="absolute -bottom-2 sm:-bottom-4 left-1/2 transform -translate-x-1/2 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-[#004bad] to-[#0066ff] rounded-xl sm:rounded-2xl flex items-center justify-center animate-float shadow-lg"
+                  style="animation-delay: -2s"
+                >
+                  <svg
+                    class="w-6 h-6 sm:w-8 sm:h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      class="w-8 h-8 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 
-           1.724 0 002.573 1.066c1.543-.94 3.31.826 
-           2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 
-           1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 
-           2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 
-           1.724 0 00-2.572 1.065c-.426 1.756-2.924 
-           1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 
-           1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 
-           0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 
-           2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                      />
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    ></path>
+                  </svg>
+                </div>
 
-                  <!-- Left Icon -->
-                  <div
-                    class="absolute top-1/2 -left-4 -translate-y-1/2 w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center animate-float shadow-lg"
-                    style="animation-delay: -3s"
+                <!-- Security Icon (Left) -->
+                <div
+                  class="absolute top-1/2 -left-2 sm:-left-4 transform -translate-y-1/2 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl sm:rounded-2xl flex items-center justify-center animate-float shadow-lg"
+                  style="animation-delay: -3s"
+                >
+                  <svg
+                    class="w-6 h-6 sm:w-8 sm:h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      class="w-8 h-8 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 
-           0 0112 2.944a11.955 11.955 0 01-8.618 
-           3.04A12.02 12.02 0 003 9c0 5.591 
-           3.824 10.29 9 11.622 5.176-1.332 
-           9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    ></path>
+                  </svg>
+                </div>
 
-                  <!-- Corner Icons -->
-                  <div
-                    class="absolute top-8 left-8 w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-xl flex items-center justify-center animate-float shadow-lg"
-                    style="animation-delay: -0.5s"
+                <!-- Additional corner elements -->
+                <div
+                  class="hidden sm:block absolute top-8 left-8 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg sm:rounded-xl flex items-center justify-center animate-float shadow-lg"
+                  style="animation-delay: -0.5s"
+                >
+                  <svg
+                    class="w-4 h-4 sm:w-6 sm:h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      class="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 
-           12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 
-           9.9a5 5 0 117.072 0l-.548.547A3.374 
-           3.374 0 0014 18.469V19a2 2 0 11-4 
-           0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                    ></path>
+                  </svg>
+                </div>
 
-                  <div
-                    class="absolute top-8 right-8 w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-xl flex items-center justify-center animate-float shadow-lg"
-                    style="animation-delay: -4s"
+                <div
+                  class="hidden sm:block absolute top-8 right-8 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-lg sm:rounded-xl flex items-center justify-center animate-float shadow-lg"
+                  style="animation-delay: -4s"
+                >
+                  <svg
+                    class="w-4 h-4 sm:w-6 sm:h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      class="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M13 16h-1v-4h-1m1-4h.01M21 
-           12a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
 
-                  <div
-                    class="absolute bottom-8 left-8 w-12 h-12 bg-gradient-to-br from-teal-500 to-green-500 rounded-xl flex items-center justify-center animate-float shadow-lg"
-                    style="animation-delay: -2.5s"
+                <div
+                  class="hidden sm:block absolute bottom-8 left-8 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-teal-500 to-green-500 rounded-lg sm:rounded-xl flex items-center justify-center animate-float shadow-lg"
+                  style="animation-delay: -2.5s"
+                >
+                  <svg
+                    class="w-4 h-4 sm:w-6 sm:h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      class="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 
-           5.002 5.002 0 10-9.78 2.096A4.001 
-           4.001 0 003 15z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+                    ></path>
+                  </svg>
+                </div>
 
-                  <div
-                    class="absolute bottom-8 right-8 w-12 h-12 bg-gradient-to-br from-red-500 to-pink-500 rounded-xl flex items-center justify-center animate-float shadow-lg"
-                    style="animation-delay: -1.5s"
+                <div
+                  class="hidden sm:block absolute bottom-8 right-8 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-red-500 to-pink-500 rounded-lg sm:rounded-xl flex items-center justify-center animate-float shadow-lg"
+                  style="animation-delay: -1.5s"
+                >
+                  <svg
+                    class="w-4 h-4 sm:w-6 sm:h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      class="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4.318 6.318a4.5 4.5 0 000 
-           6.364L12 20.364l7.682-7.682a4.5 
-           4.5 0 00-6.364-6.364L12 
-           7.636l-1.318-1.318a4.5 
-           4.5 0 00-6.364 0z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    ></path>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1297,7 +1282,7 @@
       <div class="container mx-auto px-4 sm:px-6">
         <div class="text-center mb-12 sm:mb-16">
           <h2
-            class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 font-display gradient-text"
+            class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 font-display text-white"
           >
             Our Journey
           </h2>
@@ -1317,7 +1302,7 @@
           >
             <!-- Connection Lines (hidden on mobile) -->
             <div
-              class="hidden lg:block absolute top-20 left-0 right-0 h-0.5 bg-gradient-to-tr from-[#6366f1] via-[#8b5cf6] to-[#a855f7] bg-clip-text text-transparent opacity-30"
+              class="hidden lg:block absolute top-20 left-0 right-0 h-0.5 bg-gradient-to-r from-red-400 via-yellow-400 via-blue-400 to-green-400 opacity-30"
             ></div>
 
             <!-- Step 1: Problem -->
@@ -1760,7 +1745,7 @@
             <div class="relative scale-75 sm:scale-90 lg:scale-100">
               <!-- Central Hub -->
               <div
-                class="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 bg-gradient-to-br from-[#6366f1] via-[#8b5cf6] to-[#a855f7] rounded-full flex items-center justify-center animate-glow relative"
+                class="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 gradient-blue rounded-full flex items-center justify-center animate-glow relative"
               >
                 <div
                   class="w-36 h-36 sm:w-40 sm:h-40 lg:w-48 lg:h-48 bg-slate-900 rounded-full flex items-center justify-center border-4 border-blue-400/30"
@@ -1828,17 +1813,17 @@
 
               <!-- Additional Corner Nodes -->
               <div
-                class="hidden sm:flex absolute -top-6 lg:-top-8 -left-6 lg:-left-8 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-lg sm:rounded-xl items-center justify-center animate-float shadow-lg"
+                class="hidden sm:block absolute -top-6 lg:-top-8 -left-6 lg:-left-8 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-lg sm:rounded-xl flex items-center justify-center animate-float shadow-lg"
                 style="animation-delay: -0.5s"
               >
-                <span class="text-white font-bold text-xs sm:text-sm">AI</span>
+                <span class="text-white font-bold text-xs">AI</span>
               </div>
 
               <div
-                class="hidden sm:flex absolute -bottom-6 lg:-bottom-8 -right-6 lg:-right-6 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-lg sm:rounded-xl items-center justify-center animate-float shadow-lg"
-                style="animation-delay: -0.5s"
+                class="hidden sm:block absolute -bottom-6 lg:-bottom-8 -right-6 lg:-right-8 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg sm:rounded-xl flex items-center justify-center animate-float shadow-lg"
+                style="animation-delay: -2.5s"
               >
-                <span class="text-white font-bold text-xs sm:text-sm">⚡</span>
+                <span class="text-white font-bold text-xs">⚡</span>
               </div>
 
               <!-- Connection Lines -->
@@ -2032,6 +2017,134 @@
       </div>
     </section>
 
+    <!-- Our Clients Section -->
+    <section class="py-16 sm:py-20">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+          <div
+            class="inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 bg-blue-500/10 border border-blue-500/30 rounded-full gradient-text text-xs sm:text-sm font-medium mb-4 sm:mb-6"
+          >
+            <span
+              class="w-2 h-2 bg-blue-400 rounded-full mr-2 animate-pulse"
+            ></span>
+            Trusted Partnership
+          </div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
+            <span class="gradient-text">Our Clients</span>
+          </h2>
+          <p
+            class="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto"
+          >
+            Leading enterprises worldwide trust Dellizo to power their AI
+            transformation and drive innovation at scale.
+          </p>
+        </div>
+
+        <!-- Horizontal Logo Carousel -->
+        <div class="relative overflow-hidden">
+          <!-- Gradient edges for fade effect -->
+          <div
+            class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-slate-900 to-transparent z-10"
+          ></div>
+          <div
+            class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-slate-900 to-transparent z-10"
+          ></div>
+
+          <!-- Carousel container -->
+          <div class="flex items-center justify-center py-8">
+            <!-- Moving logos track -->
+            <div
+              class="flex items-center space-x-12 sm:space-x-16 lg:space-x-20 animate-carousel"
+            >
+              <!-- First set of logos -->
+              <div
+                class="flex items-center space-x-12 sm:space-x-16 lg:space-x-20"
+              >
+                <div
+                  class="flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-xl shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                >
+                  <img
+                    src="./assests/WhatsApp Image 2025-06-01 at 17.24.44_6755fbe9.png"
+                    alt="Client 1"
+                    class="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                  />
+                </div>
+                <div
+                  class="flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-xl shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                >
+                  <img
+                    src="./assests/rawshades.png"
+                    alt="Client 2"
+                    class="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                  />
+                </div>
+                <div
+                  class="flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-xl shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                >
+                  <img
+                    src="./assests/logo.png"
+                    alt="Client 3"
+                    class="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                  />
+                </div>
+                <!-- <div
+                  class="flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-xl shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                >
+                  <img
+                    src="client4.png"
+                    alt="Client 4"
+                    class="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                  />
+                </div> -->
+              </div>
+
+              <!-- Duplicate set for seamless loop -->
+              <div
+                class="flex items-center space-x-12 sm:space-x-16 lg:space-x-20"
+              >
+                <div
+                  class="flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-xl shadow-lg flex items-center justify-center"
+                >
+                  <img
+                    src="./assests/WhatsApp Image 2025-06-01 at 17.24.44_6755fbe9.png"
+                    alt="Client 1"
+                    class="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                  />
+                </div>
+                <div
+                  class="flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-xl shadow-lg flex items-center justify-center"
+                >
+                  <img
+                    src="./assests/rawshades.png"
+                    alt="Client 2"
+                    class="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                  />
+                </div>
+                <div
+                  class="flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-xl shadow-lg flex items-center justify-center"
+                >
+                  <img
+                    src="./assests/logo.png"
+                    alt="Client 3"
+                    class="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                  />
+                </div>
+                <!-- <div
+                  class="flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-xl shadow-lg flex items-center justify-center"
+                >
+                  <img
+                    src="client4.png"
+                    alt="Client 4"
+                    class="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                  />
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section id="contact" class="py-16 sm:py-20 bg-slate-800/50">
       <div class="container mx-auto px-4 sm:px-6 text-center">
@@ -2049,7 +2162,7 @@
         >
           <a
             href="mailto:dellizocorporate@gmail.com?subject=Meeting%20Request&body=..."
-            class="px-6 sm:px-8 py-3 sm:py-4 gradient-blue  rounded-lg text-base sm:text-lg font-semibold hover:bg-blue-500 hover:text-white transition-all"
+            class="px-6 sm:px-8 py-3 sm:py-4 border-2 border-blue-500 gradient-text rounded-lg text-base sm:text-lg font-semibold hover:bg-blue-500 hover:text-white transition-all"
           >
             Let's Connect Now
           </a>
